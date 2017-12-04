@@ -5,6 +5,6 @@ const workers = [
     { name: 'Glenda', department: 'C-suite', title: 'CEO' }
 ];
 
-for (i = 0; i <= workers.length; i++) {
+for (i = 0; i < workers.length; i++) {
     console.log(workers[i].name + "'s job title is " + workers[i].title);
 }
