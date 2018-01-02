@@ -35,13 +35,13 @@ console.log("meaning of life:", hitchhikers_guide.random_facts.ultimate_answer.m
 
 let yoda_quote = ["the","greatest","teacher","failure","is"];
 
-yoda_quote.map( function (y) { 
+yoda_quote = yoda_quote.map( function (y) { 
     if (y === "the") {
-        y = y.charAt(0).toUpperCase;
+        y = y.slice(0,1).toUpperCase() + y.slice(1);
     } else if (y === "teacher") {
         y = y + ",";
     }
     return y;
 });
 
-console.log(yoda_quote.join(" "))
+console.log('Yoda says, "' + yoda_quote.join(" ") + '."')
